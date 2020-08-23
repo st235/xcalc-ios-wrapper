@@ -1,12 +1,5 @@
-//
-//  XCalcWrapper.h
-//  XCalcWrapper
-//
-//  Created by Alexander Dadukin on 23.08.2020.
-//  Copyright © 2020 Alexander Dadukin. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
+#import "./XCalcInternal.h"
 
 //! Project version number for XCalcWrapper.
 FOUNDATION_EXPORT double XCalcWrapperVersionNumber;
