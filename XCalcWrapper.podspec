@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "XCalcWrapper"
-  spec.version      = "0.0.1"
-  spec.summary      = "A small library written in Swift for xcalc arithmetic expressions processor"
+  spec.version      = "0.0.5"
+  spec.summary      = "A small library written for xcalc"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-                      Small iOS wrapper for xcalc library
+                      Small iOS wrapper for xcalc library, which provides convenient interface to xcalc arithmetic expressions processor
                    DESC
 
   spec.homepage     = "https://github.com/st235/xcalc-ios-wrapper"
@@ -90,8 +90,17 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "XCalcWrapper/**/*.{swift,c,m,h,mm,cpp}"
+  spec.private_header_files = "Headers/*.{h}"
+  spec.source_files  = "Headers/*.{h}", "XCalcWrapper/**/*.{swift,h,mm}"
   spec.swift_version = "5.0"
+  spec.vendored_libraries = 'Versions/libxcalc_core.a'
+
+  spec.frameworks = 'Foundation'
+  spec.libraries = 'c++'
+
+  spec.pod_target_xcconfig = { 
+    'HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/Headers"',
+  }
 
   # spec.public_header_files = "Classes/**/*.h"
 
