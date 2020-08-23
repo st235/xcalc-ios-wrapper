@@ -10,7 +10,7 @@
 		CF572C8524F23F7400B66F8B /* XCalcWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = CF572C8324F23F7400B66F8B /* XCalcWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF572C9A24F240D200B66F8B /* XCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572C9924F240D200B66F8B /* XCalc.swift */; };
 		CF572CA324F241C500B66F8B /* XCalcInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = CF572CA124F241C500B66F8B /* XCalcInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF572CA424F241C500B66F8B /* XCalcInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = CF572CA224F241C500B66F8B /* XCalcInternal.m */; };
+		CF572CA424F241C500B66F8B /* XCalcInternal.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF572CA224F241C500B66F8B /* XCalcInternal.mm */; };
 		CF572CC324F2581E00B66F8B /* AngleUnits.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572CC224F2581E00B66F8B /* AngleUnits.swift */; };
 		CFDC7FA024F2D29600D02FBD /* libxcalc_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDC7F9F24F2D29600D02FBD /* libxcalc_core.a */; };
 		CFDC7FA124F2D2A200D02FBD /* libxcalc_core.a in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CFDC7F9F24F2D29600D02FBD /* libxcalc_core.a */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -38,7 +38,7 @@
 		CF572C9624F2409F00B66F8B /* DegreeMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DegreeMode.h; sourceTree = "<group>"; };
 		CF572C9924F240D200B66F8B /* XCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCalc.swift; sourceTree = "<group>"; };
 		CF572CA124F241C500B66F8B /* XCalcInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCalcInternal.h; sourceTree = "<group>"; };
-		CF572CA224F241C500B66F8B /* XCalcInternal.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = XCalcInternal.m; sourceTree = "<group>"; };
+		CF572CA224F241C500B66F8B /* XCalcInternal.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = XCalcInternal.mm; sourceTree = "<group>"; };
 		CF572CC224F2581E00B66F8B /* AngleUnits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngleUnits.swift; sourceTree = "<group>"; };
 		CFDC7F9F24F2D29600D02FBD /* libxcalc_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libxcalc_core.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +81,7 @@
 				CF572C8424F23F7400B66F8B /* Info.plist */,
 				CF572C9924F240D200B66F8B /* XCalc.swift */,
 				CF572CA124F241C500B66F8B /* XCalcInternal.h */,
-				CF572CA224F241C500B66F8B /* XCalcInternal.m */,
+				CF572CA224F241C500B66F8B /* XCalcInternal.mm */,
 				CF572CC224F2581E00B66F8B /* AngleUnits.swift */,
 			);
 			path = XCalcWrapper;
@@ -193,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF572CA424F241C500B66F8B /* XCalcInternal.m in Sources */,
+				CF572CA424F241C500B66F8B /* XCalcInternal.mm in Sources */,
 				CF572CC324F2581E00B66F8B /* AngleUnits.swift in Sources */,
 				CF572C9A24F240D200B66F8B /* XCalc.swift in Sources */,
 			);
@@ -333,7 +333,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 275D4J3Y5L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -353,7 +353,7 @@
 					"$(PROJECT_DIR)/Headers",
 					"$(PROJECT_DIR)/Versions",
 				);
-				MARKETING_VERSION = 0.0.3;
+				MARKETING_VERSION = 0.0.4;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.st235.XCalcWrapper;
@@ -371,7 +371,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 275D4J3Y5L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -391,7 +391,7 @@
 					"$(PROJECT_DIR)/Headers",
 					"$(PROJECT_DIR)/Versions",
 				);
-				MARKETING_VERSION = 0.0.3;
+				MARKETING_VERSION = 0.0.4;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.st235.XCalcWrapper;
