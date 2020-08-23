@@ -333,6 +333,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 275D4J3Y5L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -352,7 +353,7 @@
 					"$(PROJECT_DIR)/Headers",
 					"$(PROJECT_DIR)/Versions",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.3;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.st235.XCalcWrapper;
@@ -370,6 +371,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 275D4J3Y5L;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -389,7 +391,7 @@
 					"$(PROJECT_DIR)/Headers",
 					"$(PROJECT_DIR)/Versions",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.3;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.st235.XCalcWrapper;
