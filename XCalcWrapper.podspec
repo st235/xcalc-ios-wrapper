@@ -63,7 +63,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform     = :ios
+  spec.platform     = :ios, "13.0"
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
@@ -90,8 +90,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m,swift}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "XCalcWrapper/**/*.{swift,c,m,h,mm,cpp}"
   spec.swift_version = "5.0"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -114,7 +113,7 @@ Pod::Spec.new do |spec|
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
+  #  the lib prefix of their name
   #
 
   # spec.framework  = "SomeFramework"
