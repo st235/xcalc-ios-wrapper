@@ -21,8 +21,10 @@ public final class XCalc {
     }
  
     public func evaluateAsync(withInput input: String, andOnSuccess onSuccess: @escaping (String) -> Void, andOnError onError: @escaping (CalculationError) -> Void) {
-        DispatchQueue.global(qos: .background).async {
-            let result = self.evaluate(withInput: input)
+        DispatchQueue.global(qos: .background).async { [weak self] in
+            guard let result = self?.evaluate(withInput: input) else {
+                return
+            }
             
             DispatchQueue.main.async {
                 switch (result) {
