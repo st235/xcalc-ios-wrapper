@@ -5,14 +5,20 @@
 ## Installation
 
 ```text
-pod 'XCalcWrapper', '~> 0.0.5'
+pod 'XCalcWrapper', '~> 0.0.6'
 ```
 
 ## Usage
 
 ```swift
-let calc = XCalc(angleUnits: .degrees) // also radians avaiable
-calc.evaluate(withInput: "56+sin(90)") // evaluate returns string
+    let calc = XCalc(angleUnits: .degrees) // also radians avaiable
+    let calcResult = calc.evaluate(withInput: "56+sin(90)") 
+    switch calcResult {
+    case .ok(let output):
+        print(output)
+    case .error(let error):
+        print("error: \(error)")
+    }
 ```
 
 
