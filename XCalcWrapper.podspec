@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "XCalcWrapper"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "A small library written for xcalc"
   spec.description  = <<-DESC
                       Small iOS wrapper for xcalc library, which provides convenient interface to xcalc arithmetic expressions processor
